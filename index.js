@@ -37,10 +37,21 @@ const questions = [
         optionD: "1975",
         correctOption: "optionC",
 		source: "maps/1974.png"
+    },
+	
+
+    {
+        question: "What month of 1919 is this from?",
+        optionA: "January",
+        optionB: "May",
+        optionC: "September",
+        optionD: "December",
+        correctOption: "optionA",
+		source: "maps/jan1919.png"
     }
 ]
 
-var numberOfQuestions = 4;
+var numberOfQuestions = 5;
 
 
 let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
