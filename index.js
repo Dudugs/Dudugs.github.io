@@ -54,11 +54,9 @@ const questions = [
 var numberOfQuestions = 5;
 
 
-let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
+let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
-    //function to shuffle and push 10 questions to shuffledQuestions array
-//app would be dealing with 10questions per session
     while (shuffledQuestions.length < numberOfQuestions) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
