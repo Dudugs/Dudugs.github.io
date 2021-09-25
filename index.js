@@ -141,7 +141,7 @@ function handleNextQuestion() {
         NextQuestion(indexNumber)
     }
     else {
-        handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
+       // handleEndGame()
     }
     resetOptionBackground()
 }
