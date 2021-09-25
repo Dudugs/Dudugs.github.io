@@ -1,0 +1,69 @@
+<link href="index.css" rel="stylesheet" type="text/css"/>
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Cool :)</h1>
+
+                <div class="grade-details">
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+<!--end of modal of quiz details-->
+
+        <div class="game-details-container">
+            <h1>Score : <span id="player-score"></span> / 4</h1>
+            <h1> Question : <span id="question-number"></span> / 4</h1>
+        </div>
+
+        <div class="game-map-container">
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+			
+			<div class="game-map-pic-container">
+				<img id="display-image" style='height: 100%; width: 100%; object-fit: fill'></h1>
+			</div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()" id="next-button">Next Question</button>
+            </div>
+        </div>
+		
+		<div class="game-options-container">
+			<span>
+                <input type="radio" id="option-one" name="option" class="radio" value="optionA" onchange="checkForAnswer()"/>
+                <label for="option-one" class="option" id="option-one-label"></label>
+            </span>
+
+            <span>
+                <input type="radio" id="option-two" name="option" class="radio" value="optionB" onchange="checkForAnswer()"/>
+                <label for="option-two" class="option" id="option-two-label"></label>
+            </span>
+
+            <span>
+                <input type="radio" id="option-three" name="option" class="radio" value="optionC" onchange="checkForAnswer()"/>
+                <label for="option-three" class="option" id="option-three-label"></label>
+            </span>
+
+
+            <span>
+                <input type="radio" id="option-four" name="option" class="radio" value="optionD" onchange="checkForAnswer()"/>
+                <label for="option-four" class="option" id="option-four-label"></label>
+            </span>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
