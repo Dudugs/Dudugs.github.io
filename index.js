@@ -141,7 +141,7 @@ function handleNextQuestion() {
         NextQuestion(indexNumber)
     }
     else {
-       // handleEndGame()
+       handleEndGame()
     }
     resetOptionBackground()
 }
