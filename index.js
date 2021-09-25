@@ -47,7 +47,7 @@ const questions = [
         optionC: "September",
         optionD: "December",
         correctOption: "optionA",
-		source: "maps/jan1919.png"
+		source: "maps/jan1919.jpg"
     }
 ]
 
